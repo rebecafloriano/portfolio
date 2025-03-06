@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #001A6E;
+    --secondary-color: #E1FFBB;
+    --tertiary-color: #009990;
+    --cor-hover: #074799;
+
+    --primary-font: 'Krona One',
+        sans-serif;
+    --secondary-font: 'Montserrat',
+        sans-serif;
+
+    --font-size-primary: 1.5rem;
+    --font-size-secondary: 2.25rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-primary);
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--tertiary-color);
+}
+
+.apresentacao {
+    flex: 1;
+    gap: 82px;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.apresentacao__conteudo__titulo {
+    font-weight: 400;
+    font-size: var(--font-size-secondary);
+    font-family: var(--primary-font);
+    line-height: 56px;
+}
+
+.destaque-azul {
+    color: var(--tertiary-color);
+}
+
+.apresentacao__conteudo__p {
+    font-size: var(--font-size-primary);
+    font-family: var(--secondary-font);
+}
+
+.apresentacao__conteudo__redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.apresentacao__conteudo__redes-sociais h2 {
+    font-weight: 400;
+    font-size: var(--font-size-primary);
+    font-family: var(--primary-font);
+}
+
+.apresentacao__conteudo__redes-sociais a {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 8px;
+    color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: var(--font-size-primary);
+    width: 50%;
+    padding: 16px 0;
+}
+
+.apresentacao__conteudo__redes-sociais a:hover {
+    background-color: var(--cor-hover);
+}
+
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.footer {
+    padding: 24px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-primary);
+    font-weight: 400;
+    line-height: 36px;
+}
+
+/* Até a tela de 1200px usar esse estilo: */
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+
+}

@@ -130,6 +130,8 @@ body {
     line-height: 36px;
 }
 
+
+
 /* Até a tela de 1200px usar esse estilo: */
 @media (max-width: 1200px) {
 
@@ -150,7 +152,18 @@ body {
         width: auto;
     }
 
+    .apresentacao__imagem {
+        width: 85%;
+    }
+}
 
+@media (max-width: 390px) {
+    .apresentacao__conteudo__redes-sociais a {
+        width: 70%;
+        padding: 16px 15px;
+    }
 
-
+    .apresentacao__imagem {
+        width: 100%;
+    }
 }

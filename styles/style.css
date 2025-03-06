@@ -150,7 +150,10 @@ body {
         width: auto;
     }
 
-  
+    .apresentacao__conteudo__redes-sociais a {
+        margin: 0 10px;
+
+    }
 
 
 }

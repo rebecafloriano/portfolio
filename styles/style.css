@@ -151,7 +151,8 @@ body {
     }
 
     .apresentacao__conteudo__redes-sociais a {
-        margin: 0 10px;
+        padding: 16px 20px;
+        background-color: red;
 
     }
 

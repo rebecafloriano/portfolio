@@ -27,4 +27,4 @@ To ensure fast loading times and optimal performance, this project uses:
 This project is configured with **Continuous Deployment**. Any changes pushed to the `main` branch are automatically reflected on the live URL via GitHub Pages.
 
 ---
-Interface design developed by **Rebeca Floriano**
+Interface design developed by **Rebeca Erdman**
